@@ -42,7 +42,8 @@
 
 ######  1) 로그인 탭  
 
-+ 로그인기능
++ 로그인기능  
+
   + Spring boot를 통해 mysql에 저장된 user테이블 조회
   + 에러가 나면 responseDTO의 에러메세지를 화면에 Toast로 표시
 
