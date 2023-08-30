@@ -1,16 +1,17 @@
 
 # BitCamp Final Project
 <hr/>
-## 비트캠프 마지막 프로젝트 3조
 
-## 프로젝트 명 : 에듀벤쳐 (Edu-Venture)
+### 비트캠프 마지막 프로젝트 3조
 
-## 앱 이름 : EduVenture-Student
-## 작성자 : 김은석
+### 프로젝트 명 : 에듀벤쳐 (Edu-Venture)
 
-## 프로젝트 기간 : 2020.08.02 ~ 2020.09.11
+### 앱 이름 : EduVenture-Student
+### 작성자 : 김은석
 
-## 개발 환경: Android Studio, Java, Retrofit API, SpringBoot, MySQL, NaverCloud
+### 프로젝트 기간 : 2020.08.02 ~ 2020.09.11
+
+### 개발 환경: Android Studio, Java, Retrofit API, SpringBoot, MySQL, NaverCloud
 <hr/>
 
 
