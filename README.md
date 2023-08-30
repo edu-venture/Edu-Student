@@ -24,6 +24,42 @@
 
 ## 구현 방식
 
+######  0) 전체적인 구조
++ Retrofit API, OKHttp를 통해 Spring에 접근. 로그인/출석/버스위치 불러오기/기사 연락/기사가 찍은 사진 보기
++ 화면 Fragment로 세가지 구성(출석, 지도, 기사연락)
++ 서버에 요청하고 Response를 받기위해 여러가지 DTO 생성
+  +  UserDTO
+  +  GPS
+  +  DriverPhoto
+  +  CourseDTO
+  +  AttendDTO
+  +  ResponseDTO
+  +  MEssageDTO
+
+
+######  1) 로그인 탭
++ 로그인기능
+  + Spring boot를 통해 mysql에 저장된 user테이블 조회
+  + 에러가 나면 responseDTO의 에러메세지를 화면에 Toast로 표시
+
+######  2) 입실  탭
++ 입, 퇴실기능
+  +  Spring boot서버에 요청을해  attendance 테이블에 입, 퇴실시간 작성
+  +  에러가 나면 responseDTO의 에러메세지를 화면에 Toast로 표시
+  +  -> 나의수업 요일, 수업시간에만 attendance 테이블에 적히도록 springboot서버에 코딩.
+  +  입실, 퇴실을 했을 시 버튼 아래 화면에 입실시간이 나온다.
+  +  화면을 불러올때 이미 한 입, 퇴실시간을 불러오지는 않는다.
+
+######  3) 지도  탭
++ naver지도 표시기능
+  +  navermap api 기능을 통해 지도에 버스의 경로 표시
+  +  안드로이드 내부의 FusedLocationProviderClient 기능을 통해 나의 위치 표시
+  +
+
+
+
+
+
 
 
 ##### Edu-Student앱을 통해서 학생들은 입실, 퇴실을 원격으로할 수 있으며
