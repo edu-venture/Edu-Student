@@ -30,14 +30,15 @@
 ######  0) 전체적인 구조
 + Retrofit API, OKHttp를 통해 Spring에 접근. 로그인/출석/버스위치 불러오기/기사 연락/기사가 찍은 사진 보기
 + 화면 Fragment로 세가지 구성(출석, 지도, 기사연락)
-+ 서버에 요청하고 Response를 받기위해 여러가지 DTO 생성
-  +  UserDTO
-  +  GPS
-  +  DriverPhoto
-  +  CourseDTO
-  +  AttendDTO
-  +  ResponseDTO
-  +  MEssageDTO
++ 서버에 요청하고 Response를 받기위해 여러가지 DTO 생성  
+
+  + UserDTO
+  + GPS
+  + DriverPhoto
+  + CourseDTO
+  + AttendDTO
+  + ResponseDTO
+  + MEssageDTO
 
 
 ######  1) 로그인 탭
