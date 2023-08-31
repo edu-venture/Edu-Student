@@ -97,7 +97,7 @@
 
 3) 기사아저씨한테 sms보내기
 
-<img src="./images/스튜던트-sms보내기"  width="700" height="370">
+<img src="./images/스튜던트-sms보내기.gif"  width="700" height="370">
 
 
 4) 기사아저씨가 찍은 학원생 승차사진 확인
