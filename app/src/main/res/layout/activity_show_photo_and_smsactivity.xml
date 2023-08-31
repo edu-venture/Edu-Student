@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-android:gravity="center"
-    tools:context=".ShowPhotoAndSMSActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/smsphoto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#287A09"
-        android:fontFamily="@font/baeminjua"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
 
-        android:textSize="20dp"
+        tools:context=".ShowPhotoAndSMSActivity">
 
-        android:text="기사님이 마지막으로 찍은 사진"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baeminjua"
+            android:text="기사님이 마지막으로 찍은 사진"
+
+            android:textColor="#287A09"
+
+            android:textSize="20dp" />
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="302dp"
-        android:layout_height="302dp"
-        android:layout_marginTop="30dp"
-        app:cardElevation="0dp"
-        app:cardCornerRadius="10dp"
-        android:background="@drawable/green_border"
+        <androidx.cardview.widget.CardView
+            android:layout_width="302dp"
+            android:layout_height="302dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_border"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp"
 
-        app:cardBackgroundColor="#FFFFFF">
+            app:cardElevation="0dp">
 
-        <ImageView
+            <ImageView
+                android:id="@+id/photoview"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/baeminjua"
+            android:text="기사님에게 남길 메세지"
+            android:textColor="#287A09"
+
+
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Message"
             android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:id="@+id/photoview"
-            android:scaleType="centerCrop"/>
+            android:layout_height="wrap_content"
 
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/baeminjua"
+
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/sendbutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#529F35"
+            android:fontFamily="@font/baeminjua"
+
+            android:text="보내기" />
 
 
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#287A09"
-        android:textSize="20dp"
-        android:fontFamily="@font/baeminjua"
-
-
-        android:text="기사님에게 남길 메세지"/>
-    <EditText
-        android:layout_marginTop="60dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-
-        android:scrollbars="vertical"
-        android:fontFamily="@font/baeminjua"
-
-        android:id="@+id/Message"
-        />
-    <Button
-        android:layout_marginTop="10dp"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/sendbutton"
-android:backgroundTint="#529F35"
-        android:fontFamily="@font/baeminjua"
-
-        android:text="보내기"
-        />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
