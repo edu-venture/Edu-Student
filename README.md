@@ -86,23 +86,34 @@
 
 1) 로그인기능  
 
+
+
+<br/>
+
 <img src="./images/스튜던트-로그인.gif"  width="700" height="370">
 
 
 
 2) 입실퇴실기능  
 
+
+
+<br/>
+
 <img src="./images/스튜던트-입실퇴실.gif"  width="700" height="370">
 
 
 3) 기사아저씨한테 sms보내기  
+
+
+<br/>
 
 <img src="./images/스튜던트-sms보내기.gif"  width="700" height="370">
 
 
 4) 기사아저씨가 찍은 학원생 승차사진 확인  
 
-  
+  <br/>
   
 
 <img src="./images/스튜던트 사진확인.gif"  width="700" height="370">
@@ -110,8 +121,8 @@
   
 
 5) 위치조작 확인  
-  
 
+<br/>
 
 <img src="./images/스튜던트-지도확인가능.gif"  width="700" height="370">
 
