@@ -102,15 +102,20 @@
 
 4) 기사아저씨가 찍은 학원생 승차사진 확인  
 
+  
+  
 
 <img src="./images/스튜던트 사진확인.gif"  width="700" height="370">
 
+  
 
 5) 위치조작 확인  
+  
 
 
 <img src="./images/스튜던트-지도확인가능.gif"  width="700" height="370">
 
+  
 
 <hr/>
 
