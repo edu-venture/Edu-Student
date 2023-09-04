@@ -42,6 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
     private ShowPhotoAndSMSActivity showPhotoAndSMSActivity;
     private AttendActivity attendActivity;
     private GPSActivity gpsActivity;
+    private ClassActivity classActivity;
 
 
     @Override
@@ -63,26 +64,24 @@ public class DashboardActivity extends AppCompatActivity {
         bundle.putSerializable("userDTO", userDTO);
         attendActivity.setArguments(bundle);
 
+
+        classActivity = new ClassActivity();
+        classActivity.setArguments(bundle);
+
         gpsActivity = new GPSActivity();
-gpsActivity.setArguments(bundle);
-showPhotoAndSMSActivity.setArguments(bundle);
+        gpsActivity.setArguments(bundle);
+        showPhotoAndSMSActivity.setArguments(bundle);
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout, attendActivity).commitAllowingStateLoss();
 
 
-
-
-
-
     }
 
-    public void clickHandler(View view)
-    {
+    public void clickHandler(View view) {
         transaction = fragmentManager.beginTransaction();
 
-        switch(view.getId())
-        {
+        switch (view.getId()) {
             case R.id.btn_fragmentA:
                 transaction.replace(R.id.frameLayout, attendActivity).commitAllowingStateLoss();
                 break;
@@ -100,13 +99,14 @@ showPhotoAndSMSActivity.setArguments(bundle);
                 getGPs();
 //                transaction.replace(R.id.frameLayout, showPhotoAndSMSActivity).commitAllowingStateLoss();
                 break;
+
+            case R.id.btn_fragmentD:
+                transaction.replace(R.id.frameLayout, classActivity).commitAllowingStateLoss();
+                break;
+
+
         }
     }
-
-
-
-
-
 
 
     private void getGPs() {
@@ -159,7 +159,6 @@ showPhotoAndSMSActivity.setArguments(bundle);
 //지도보러가는곳
 
 
-
                                 Bundle bundle = new Bundle();
                                 bundle.putSerializable("userDTO", userDTO);
                                 bundle.putSerializable("GPS", mygps);
@@ -173,11 +172,9 @@ showPhotoAndSMSActivity.setArguments(bundle);
                                 transaction.replace(R.id.frameLayout, gpsActivity).commitAllowingStateLoss();
 
 
-
                             }
                             if (flag == 1) {
-                              //사진보러가는곳
-
+                                //사진보러가는곳
 
 
                                 Bundle bundle = new Bundle();

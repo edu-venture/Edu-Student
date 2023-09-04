@@ -23,6 +23,10 @@ public interface ApiService {
     @GET("igiveyougps")
     Call<ResponseBody> getGPS();
 
+
+    @GET("vod/board-list")
+    Call<ResponseBody> getVodBoard();
+
     @GET("trytogetphotofromserver")
     Call<ResponseBody> getPhotoKids(@Query("userBus") String userBus);
     @POST("sms/send")
